@@ -1,0 +1,44 @@
+[
+  {
+    "name": "MaaS_nodeName",
+    "script": "app.js",
+    "log_date_format": "YYYY-MM-DD HH:mm Z",
+    "merge_logs": false,
+    "watch": false,
+    "max_restarts": 10,
+    "exec_interpreter": "node",
+    "exec_mode": "fork_mode",
+    "env": {
+      "NODE_ENV": "production",
+      "RPC_HOST": "localhost",
+      "RPC_PORT": "8503",
+      "LISTENING_PORT": "30503",
+      "INSTANCE_NAME": "nodeName",
+      "CONTACT_DETAILS": "bernard@hotmail.be",
+      "WS_SERVER": "http://localhost:3000",
+      "WS_SECRET": "seMaaS*123456",
+      "VERBOSITY": 3
+    }
+  },
+  {
+    "name": "MaaS_xps9500",
+    "script": "app.js",
+    "log_date_format": "YYYY-MM-DD HH:mm Z",
+    "merge_logs": false,
+    "watch": false,
+    "max_restarts": 10,
+    "exec_interpreter": "node",
+    "exec_mode": "fork_mode",
+    "env": {
+      "NODE_ENV": "production",
+      "RPC_HOST": "192.168.0.143",
+      "RPC_PORT": "8503",
+      "LISTENING_PORT": "30503",
+      "INSTANCE_NAME": "Geth/xps9500/v1.10.10-stable-bb74230f/linux-amd64/go1.17.2",
+      "CONTACT_DETAILS": "bernard@hotmail.be",
+      "WS_SERVER": "http://localhost:3000",
+      "WS_SECRET": "seMaaS*123456",
+      "VERBOSITY": 3
+    }
+  }
+]
