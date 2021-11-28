@@ -1,4 +1,4 @@
-name: Docker
+name: Docker module IoT Edge
 
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
@@ -7,11 +7,11 @@ name: Docker
 
 on:
   push:
-    branches: [master]
+    branches: [main]
     # Publish semver tags as releases.
     tags: ["v*.*.*"]
   pull_request:
-    branches: [master]
+    branches: [main]
 
 env:
   IMAGE_NAME: se-iiotbox-monitor
